@@ -9,7 +9,7 @@ class Config(object):
     SECRET_KEY = 'this-really-needs-to-be-changed'
     JWT_SECRET_KEY = 'super-secret'
     JWT_TOKEN_LOCATION = ['cookies', 'headers']
-    MONGO_URI = "mongodb://localhost:27017/flaskExample"
+    MONGO_URI = "mongodb://mongodb:27017/flaskExample"
     CELERY_BROKER_URL='redis://redis:6379/0'
     CELERY_RESULT_BACKEND='redis://redis:6379/0'
     
@@ -28,6 +28,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
     CELERY_BROKER_URL='redis://localhost:6379/0'
     CELERY_RESULT_BACKEND='redis://localhost:6379/0'
+    MONGO_URI = "mongodb://localhost:27017/flaskExample"
 
 
 class TestingConfig(Config):

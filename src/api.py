@@ -40,7 +40,7 @@ def insert():
 
     return jsonify({200: "OK"})
 
-@app.route('/api/delete', methods=['POST'])
+@app.route('/api/delete', methods=['DELETE'])
 @jwt_required
 def delete():
     """Deletes the bookshelf
