@@ -1,6 +1,6 @@
-FROM python:3.7-stretch
+FROM python:3.8.5-buster
 
-MAINTAINER Lucas Fernandez "lucasfernandezaragon@gmail.com"
+LABEL maintainer="lucasfernandezaragon@gmail.com"
 
 ENV PYTHONUNBUFFERED 1
 
